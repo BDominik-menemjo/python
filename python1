@@ -1,0 +1,107 @@
+print("Hello world")
+#import sys #könyvtár szükséges a sys.float_info.dig parancshoz
+
+x=5
+print(type(x))
+s="123"
+print(type(s))
+#print(x+s) #hiba
+print(type(s) is str)
+print(type(s) is int)
+
+a1 = 120
+print(type(a1)) #int
+
+a2 = 12.0
+print(type(a2)) #float
+
+a3 = 5 + 1j
+print(type(a3)) #complex
+
+a4 = float(7)
+print(type(a4)) #float
+
+a5 = str(1)
+print(type(a5)) #str
+print(a5)
+
+#print(a1+a5) #hiba
+
+#print(sys.float_info.dig) #jelenleg nem jó
+
+print(a1+int(a5)) #számmá alakul az a5, csak itt!
+print(type(a5)) #egyébként marad string
+
+s1='11'
+s2='12'
+print(type(s1+s2)) #egymásba fűzi a stringeket
+print(type(int(s1+s2))) #ugyanaz csak a típus különbözik(típus konverzió)
+
+print("Alma"+"-"+"Körte") #stringet összefűzni +-szal, ha szőközt vagy akármilyen szimbólumot/írásjelet akarunk akkor hozzáadjuk ezt is a fűzéshez
+
+print("Pucu"*10)
+
+print('a','b','c', 'da\'sda"as"sd--e')
+print("a","b","c", "deas'aaa'asd")
+print("a","b","c", "de", sep="")
+print("a","b","c", "de", sep="***")
+print("x\ny")
+print("Ez kerüljön", end=" ")
+print("egy sorba.")
+print("Ez kerüljön", end="\n")
+print("külön sorba.")
+
+print("range(6):   \t", end="")
+# 0 1 2 3 4 5
+for x in range(6):
+    print("%4d" % x, end="")
+    
+print("\nrange(3, 9):   \t", end="")
+# 3 4 5 6 7 8
+for x in range(3, 9):
+    print("%4d" % x, end="")
+
+print("\nrange(3,14,2):\t", end="")
+# 3 5 7 9 11 13
+for x in range(3,14,2):
+    print("%4d" % x, end="")
+print("\n")
+
+x=1
+for i in range(1,10):
+    x=x+(i+1)
+    
+print(x)
+
+x=1
+i=1
+while i<10:
+    x=x+(i+1)
+    i+=1
+    
+print(x)
+
+x=1
+for i in range(1,10):
+    x=x*(i*1)
+    
+print(x)
+
+n=11
+x=1
+for i in range(1,n):
+    x=x*i
+print(x)
+
+n=10
+x=1
+i=1
+while i<=n:
+    x=x*i
+    i+=1
+print(x)
+
+x=1
+for i in range(1,9,2):
+    x=x+(i+2)
+print(x)
