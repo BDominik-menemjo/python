@@ -1,0 +1,67 @@
+x=0
+input(x)
+0a
+'a'
+x=input()
+10
+5
+10
+x=input()
+10
+5
+10
+print=('Írj be egy számot')
+if input=('5')
+    print=('A számod 5 volt')
+else: print="nemjó"
+  File "C:\Users\tanar\AppData\Local\Temp/ipykernel_12876/1619806277.py", line 2
+    if input=('5')
+            ^
+SyntaxError: invalid syntax
+
+
+:
+x=int(input())
+​
+if x<5:
+    print("A szám kisebb mint 5!")
+elif x>5:
+    print("A szám nagyobb mint 5!")
+else:
+    print("A szám pontosan 5!")
+42
+A szám nagyobb mint 5!
+x=int(input())
+print=("Írj be egy 5-nél nagyobb számot!")
+​
+if x<5:
+    print("A szám legyen nagyobb mint 5!")
+    x=int(input())
+elif x>5:
+    print("A szám nagyobb mint 5!")
+else:
+    print("A szám legyen nagyobb mint 5!")
+    x=int(input())
+5
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+~\AppData\Local\Temp/ipykernel_12876/189372485.py in <module>
+      7     print("A szám nagyobb mint 5!")
+      8 else:
+----> 9     print("A szám legyen nagyobb mint 5!")
+
+TypeError: 'str' object is not callable
+
+x=int(input())
+​
+while x<=5:
+    print("Rossz input! Add meg újra:")
+    x=int(input())
+​
+for i in range(1,x+1):
+    if i<x:
+        print("%d" %i, end=", ")
+    else:
+        print("%d" %i, end="")
+7
+1, 2, 3, 4, 5, 6, 7
